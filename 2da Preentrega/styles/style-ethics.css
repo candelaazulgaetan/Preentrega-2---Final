@@ -1,0 +1,248 @@
+html{
+    margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+    }
+    header{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        height:10vh;
+        justify-content:center;
+        }
+        nav{
+            background-color: white;
+        }
+    nav ul {
+     display: flex;
+     height: 3vh;
+     justify-content: space-around;
+     box-sizing: content-box;
+     align-items:center;
+     list-style: none;
+    }
+    li:hover{
+        transform: scale(1.10); 
+    }
+    .logo{
+        display: flex;
+        
+    }
+    nav ul li a {
+        font-family: 'Secular One', sans-serif;
+        text-decoration: none;
+        text-decoration-line: none;
+        color: black;
+        font-size: 1.2rem;
+        display: inline;
+    
+    }
+    body{
+        background-image: url(./media/dots.png);
+        background-image: url(../media/dots.png);
+    
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main .box{
+        display: flex;
+        margin: 3rem;
+        border: .5rem solid rgb(212,167,172);
+        background-color: white;
+        border-radius: 2rem;
+        flex-direction: column;
+    }
+    .box h2{
+        padding-left: 4rem;
+        padding-right: 4rem;
+       font-size: 4rem;
+        font-family: 'Secular One', sans-serif;
+      text-align:  center;
+        color: rgb(212,167,172);
+    }
+    .box p{
+        font-size: 2rem;
+        font-family: 'Secular One', sans-serif;
+        text-align-last: center;
+        color: black;
+        padding-left: 4rem;
+        padding-right: 4rem;
+       
+    }
+    .box button{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        background-color:  rgb(212,167,172);
+        max-width: 40rem;
+        align-self: center;
+        border: 1px hotpink solid;
+        border-radius: 2rem;
+    }
+    .box button a{
+        padding: 6rem;
+        font-size: 4rem;
+        font-family: 'Secular One', sans-serif;
+        text-decoration: none;
+        color: azure;
+    }
+    .box button :hover{
+        color: hotpink;
+    }
+    footer{
+       grid-area: footer;
+        background-color: white;
+        display: flex;
+       justify-content: space-around;
+       margin: 0;
+       padding: 0;
+    }
+    footer p{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        size: 1rem;
+        color: grey;
+    }
+    footer img{
+        opacity: 25%;
+        height: 50px;
+        justify-content: end;
+        margin-left: 0%;
+    }
+    @media screen and (max-width:576px) { 
+        header{
+           height: 6vh;
+         }
+        nav{
+        margin-top: 1rem;
+      
+        }
+       nav ul {
+         display:flex;
+         height: 2vh;
+         background-color: white;
+         list-style: none;
+         padding: 0;
+         margin: 0%;
+       }
+        
+        nav ul li a {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            text-decoration-line: none;
+            color: black;
+            font-size: 13px;
+            padding: 0%;
+            
+            }
+     
+        div .box h2{
+            font-size: 2rem;
+        }
+        div .box p{
+            font-size: 1.2rem;
+        }
+        div .box button{
+            margin-top: .6rem;
+            margin-bottom: 2rem;
+        }
+        div .box button a{
+            font-size: 2rem
+        }
+      footer{
+         grid-area: footer;
+         background-color: white;
+         display: flex;
+        margin: 0;
+        padding: 0;
+        }
+     
+     
+      
+      footer p{
+         margin-top: 1rem;
+         margin-left: 2rem;
+         margin-bottom: 0;
+         padding-bottom: 0;
+         flex-direction: column;
+         justify-content: flex-start;
+         font-family: 'Roboto', sans-serif;
+         font-size: 8px;
+         color: grey;
+     
+      
+        }
+        footer img{
+         width: 90px;
+         height: 20px;
+         margin-top: .5rem;
+         margin-left: 3rem;
+     
+        }
+     }
+     
+     
+    @media screen and (max-width:768px) and (min-width:577px){
+        header{
+          height: 10vh;
+        }
+       
+       
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        list-style: none;
+        margin-top: 1rem;
+        padding-left: 0%;
+       }
+       nav ul li a {
+           font-size: 1rem;
+           padding: 0;
+           
+       }
+    div .box h2{
+        font-size: 2.5rem;
+    }
+    div .box p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    div .box button a{
+        font-size: 2rem ;
+    }
+    div .box button{
+        margin-top: .6rem;
+        
+    }
+     
+     footer{
+        grid-area: footer;
+        background-color: white;
+        display: flex;
+       margin: 0;
+       padding: 0;
+     }
+     footer p{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        color: grey;
+     
+       }
+       footer img{
+        width: 120px;
+        height: 20px;
+        margin-top: .5rem;
+        margin-left: 3rem;
+       }
+        
+    }
